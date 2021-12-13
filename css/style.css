@@ -1,0 +1,86 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(#304D63, #2BE7E8);
+}
+
+.container {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+@-webkit-keyframes snowman {
+    from {-webkit-transform: rotate(4deg)}
+    to   {-webkit-transform: rotate(-4deg)}
+}
+
+@keyframes snowman {
+    from {transform: rotate(4deg)}
+    to   {transform: rotate(-4deg)}
+}
+
+.container .logo {
+    -webkit-animation: snowman 2s alternate infinite ease-in-out;
+    animation: snowman 2s alternate infinite ease-in-out;
+    position: absolute;
+    top: -25px;
+}
+
+.container p.titulo strong {
+  font-size: 48px;
+  color: #F2D096;
+  margin-right: -10px;
+}
+
+.container p.titulo {
+  font-size: 30px;
+}
+
+.btn-slider {
+  width: 100vw;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo {
+  width: 80vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px;
+  border: 1px RGB(143, 185, 170, 0.1) solid;
+  border-radius: 20px;
+}
+
+.conteudo h2 {
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+.item-slider {
+  width: 20px;
+  height: 20px;
+  background-color: #444;
+  border-radius: 50%;
+  margin-bottom : 20px;
+  margin: 1em;
+}
+
+.item-slider.active {
+  background-color: #F2D096;
+  border: 1px #444 solid;
+}
