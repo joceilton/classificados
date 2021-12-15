@@ -42,7 +42,6 @@ div.container {
 
 section.container {
   display: flex;
-  padding: 20px;
 }
 
 section.container .slider {
