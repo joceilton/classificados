@@ -7,7 +7,7 @@ html, body {
   background-image: linear-gradient(#304D63, #2BE7E8);
 }
 
-.container {
+div.container {
   width: 100vw;
   height: 95vh;
   display: flex;
@@ -40,6 +40,19 @@ html, body {
   color: #fff;
 }
 
+section.container {
+  display: flex;
+  padding: 20px;
+}
+
+section.container .slider {
+  background-color: #304D63;
+  text-align: center;
+}
+
+section.container .slider .img_banner {
+  width: 100%;
+}
 
 @-webkit-keyframes snowman {
     from {-webkit-transform: rotate(4deg)}
