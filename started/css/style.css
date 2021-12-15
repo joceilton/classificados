@@ -17,6 +17,18 @@ html, body {
 
 }
 
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  border: 1px #444 solid;
+}
+
+
 @-webkit-keyframes snowman {
     from {-webkit-transform: rotate(4deg)}
     to   {-webkit-transform: rotate(-4deg)}
