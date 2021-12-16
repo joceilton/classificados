@@ -3,6 +3,7 @@ html, body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(#304D63, #2BE7E8);
 }
@@ -14,7 +15,6 @@ div.container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 
@@ -23,6 +23,7 @@ div.container {
   justify-content: space-between;
   align-items: center;
   background-color: #304D63;
+  padding: 0 15px;
 }
 
 .header ul {
@@ -40,18 +41,21 @@ div.container {
   color: #fff;
 }
 
-section.container {
+section.container-slider {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section.container .slider {
-  background-color: #304D63;
+section.container-slider .slider {
   text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px #444 solid;
 }
 
-section.container .slider .img_banner {
+section.container-slider .slider .img_banner {
   width: 100%;
 }
 
@@ -147,6 +151,52 @@ section.container .slider .img_banner {
   border-radius: 20px;
 }
 
+section.categorias {
+  padding: 0 20px;
+}
+
+section.categorias .listar-categorias {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  padding: 5px;
+}
+
+section.categorias .listar-categorias .categoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+  width: calc(30% - 5px);
+  font-size: larger;
+}
+
+section.categorias .listar-categorias .categoria .icone {
+  font-size: 2rem;
+  color: #304D63;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+section.categorias .listar-categorias h2 {
+  font-size: small;
+  text-align: center;
+}
+
+section.categorias h1.titulo {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
+  background-color: #304D63;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 @-webkit-keyframes rev-block {
     from {-webkit-transform: scale(1)}
     to   {-webkit-transform: scale(0.7)}
@@ -155,4 +205,16 @@ section.container .slider .img_banner {
 @keyframes rev-block {
     from {-webkit-transform: scale(1)}
     to   {-webkit-transform: scale(0.7)}
+}
+
+@media (max-width: 768px) {
+
+  section.container-slider .slider {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: #fff;
+    border: 1px #444 solid;
+  }
+
 }
