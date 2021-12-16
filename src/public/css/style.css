@@ -153,6 +153,8 @@ section.container-slider .slider .img_banner {
 
 section.categorias {
   padding: 0 20px;
+  margin: 0 15px;
+  background-color: #fff;
 }
 
 section.categorias .listar-categorias {
@@ -162,6 +164,7 @@ section.categorias .listar-categorias {
   flex-wrap: wrap;
   justify-content: stretch;
   padding: 5px;
+  background-color: #fff;
 }
 
 section.categorias .listar-categorias .categoria {
@@ -193,8 +196,8 @@ section.categorias h1.titulo {
   font-weight: 100;
   color: #fff;
   background-color: #304D63;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 10px;
 }
 
 @-webkit-keyframes rev-block {
@@ -213,8 +216,7 @@ section.categorias h1.titulo {
     text-align: center;
     padding: 10px;
     margin: 0;
-    background-color: #fff;
-    border: 1px #444 solid;
+    background-color: #FB8D42;
   }
 
 }
